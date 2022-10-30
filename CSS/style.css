@@ -1,0 +1,153 @@
+/*#cce3fe good looking backgroud
+#83c8fe*/
+body {
+    background: #91cdfd;
+    font-family: "Times New Roman", serif;
+}
+
+* {/*star symbol means all HTML elements*/
+    box-sizing: border-box;/*Ref: https://www.w3schools.com/css/css3_box-sizing.asp*/
+    margin: 0;
+    padding: 0;
+    color:black;
+}
+nav {
+    min-height: 5vh;
+    background-color: #2a5c90;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+}
+
+nav ul li {
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+  
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+ul li:hover > ul, 
+ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+ul li ul li {
+    clear: both;
+    width: 100%;
+}
+
+.active
+{background-color: #021f3d;
+
+}
+nav ul li a:hover:not(.active) {
+    background-color: #0c3f75;
+}
+ul li ul {
+    background: #2a5c90;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    display: none;
+    
+  }
+  .grid-item-style{
+	background-color:#c0eab6;
+    width:47%;
+	display: inline-block;
+	margin: 10px;
+	padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: smaller;
+}
+.long-article {
+	flex-direction: column;
+}
+  @media only screen and (max-width: 600px) {
+	.grid-item-style{
+		width: 90%;
+	}
+
+    #history_flex {
+        flex-direction: column;
+        margin: 10px;
+        padding: 10px;
+    }
+}
+footer{
+    box-sizing: border-box;/*Ref: https://www.w3schools.com/css/css3_box-sizing.asp*/
+    margin: 0;
+    padding: 0;
+    background-color:black;
+}
+.logo {
+    width: 33px;
+    height: 67px;
+    border-radius: 5px;
+  }
+
+#netflix_logo {
+    float: right;
+}
+#swag{
+    font-size: x-large;
+    text-align: center;
+
+}
+#legal
+{
+    font-size:large;
+    text-align:left;
+    font-family: "Times New Roman", serif;
+    box-sizing: border-box;
+    margin: 10;
+    padding: 10;
+}
+.tab {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.tab1 {
+    display: inline-block;
+    margin-left: 22%;
+}
+.tab2{
+    display: inline-block;
+    margin-left:auto;
+}
+#homepage 
+{
+    text-align: center;
+    margin: 10;
+    padding: 10;
+}
+#coppy_write
+{
+    font-size: large;
+    text-align:justify;
+    font-family:'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    margin:10;
+    padding:10;
+}
+#test
+{
+    margin: 20;
+    padding: 10;
+}

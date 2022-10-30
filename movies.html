@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+    <Title>Movies of Studio Ghibli</Title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="icon" type="image/x-icon" href="MEDIA/totoro.ico">
+</HEAD>
+    <nav>
+        <ul>
+            <li> <a href="index.html">Home</a></li>
+            <li><a href="movies.html"class="active">Flims</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="legal.html">Legal</a>
+                <ul>        
+                    <li><a href="copyright.html">Copyright</a></li>
+                    <li><a href="bibliography.html">bibliography</a></li>
+                </ul>         
+            </li>
+            
+        </ul>
+    </nav>
+<body>
+    <H1>Here are all the studio Ghibli flims.</h1>
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+        <label><p>See any movie you like use this drop down to find more infomation.</p>
+        <select id="my-movie-list" onchange="displayMovie()"></select>
+            <div>
+                <h4 id="my-movie-Title">Title</h4>
+                <p id="my-movie-Year">Year</p>
+                <img style="margin: 10;" id="my-movie-ImageURL"height="300px">
+                <p id="Blurb">Plot summary</p>
+            </div></label>
+        <img id="slideshow" src="MEDIA/poster1.png" width="400" height="400"></div>
+    <script>
+        window.onload = function() {
+            slideshow_movies();
+        }
+    </script>
+		<br></br>
+		<hr>
+		<h2>Here is all the infomation you will need about these movies.</h2>
+		<div id="movie-list"></div>
+        
+</body>
+<script src="Javascript/moviedropdown.js"></script>
+<script src="Javascript/moviesslideshow.js"></script>
+<script src="Javascript/copyright.js"></script>
+<br>This website is for educational purposes only. All credit goes to the origional creators/authors/owners.<br>
+<script> document.write("Coppyright Aidan Willis 2020-" + year)</script>
+</HTML>
